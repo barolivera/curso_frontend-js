@@ -3,48 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Trekker</title>
 </head>
 <body>
     <header>
-        <img src="logo.png" alt="Logo de Trekker" width="100%">
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+              <img src="logo.svg" alt="Logo de Trekker">
+            </a>
+            <ul class="nav-list">
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Locales</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        Este es el menu
-        <ul>
-            <li><a href="">Inicio</a></li>
-            <li><a href="">Nosotros</a></li>
-            <li><a href="">Productos</a></li>
-            <li><a href="">Servicios</a></li>
-            <li><a href="">Contacto</a></li>
-        </ul>
-    </nav>
     <main>
-        <h1>Explorá Argentina a través de sus paisajes más salvajes</h1>
-        <p>Elegí tu destino, planificá tu ruta, y descubrí lugares inolvidables.</p>
+        <h1>Preparate para tu proxima aventura </h1>
+        <p>Encontra aca todo lo que necesitas para explorar el mundo</p>
         <video controls width="100%">
             <source src="video.mp4" type="video/mp4">
         </video>
         <!-- modify this form HTML and place wherever you want your form -->
-<form action="https://formspree.io/f/xanelvbp" method="POST">
-<label for="nombre">
-        Tu nombre:
-      <input type="text" id="nombre" name="nombre" required>
-    </label>
-<label for="email">
-    Correo electronico:
-  <input type="email" id="email" name="email" required>
-</label>
-<label>
-  Tu mensaje:
-  <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea>
-</label>
-<!-- your other form fields go here -->
-<button type="submit">Enviar</button>
-</form>
+        <form action="https://formspree.io/f/xanelvbp" method="POST">
+            <div>
+              <label for="nombre">Tu nombre:</label>
+              <input type="text" id="nombre" name="nombre" required>
+            </div>
+          
+            <div>
+              <label for="email">Correo electrónico:</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+          
+            <div>
+              <label for="mensaje">Tu mensaje:</label>
+              <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea>
+            </div>
+          
+            <button type="submit">Enviar</button>
+          </form>          
     </main>
     <footer>
-        Este es el pie de la pagina
+        <p>Seguinos en nuestras redes:</p>
+    <ul class="social-icons">
+        <li><a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="https://tiktok.com" target="_blank"><i class="fa-brands fa-tiktok"></i></a></li>
+        <li><a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+    </ul>
+        <p>®Trekker 2025. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>
